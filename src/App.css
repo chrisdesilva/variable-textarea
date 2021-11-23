@@ -1,10 +1,83 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#editableDiv {
+  display: flex;
+  align-items: flex-start;
+  width: 50%;
+  max-width: 50%;
+  margin: 100px auto 0 auto;
+  border: 1px solid gray;
+  border-radius: 4px;
+  color: black;
+  padding: 16px;
+  word-wrap: break-word;
+  height: 75px;
+}
+
+.previewAnchor {
+  position: relative;
+  height: 2px;
+  width: 2px;
+  word-wrap: break-word;
+}
+
+.preview {
+  position: absolute;
+  left: 0;
+  top: 16px;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  padding: 0 4px 4px 8px;
+  border: 1px solid purple;
+  border-radius: 9999px;
+  background-color: purple;
+  white-space: nowrap;
+  color: white;
+  position: relative;
+  top: 12px;
+  margin-left: 8px;
+}
+
+.chip button {
+  display: flex;
+  border: none;
+  background-color: purple;
+  cursor: pointer;
+  color: white;
+}
+
+input {
+  height: 1px;
+  width: 1px;
+  border: none;
+  outline: none;
+}
+
+select {
+  width: 100%;
+  min-width: 50%;
+  border: none;
+  border-radius: 5px;
+  padding: 14px;
+  padding-left: 14px;
+}
+
+select {
+  width: 50%;
+  margin: 8px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (prefers-reduced-motion: no-preference) {
